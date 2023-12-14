@@ -91,7 +91,7 @@
     border-radius: 0.5rem;
 }
 
-.register-page_inner_left_form__email_passw {
+.register-page_inner_left_form__email_username {
     width: 100%;
     @include flexBox(row , nowrap, space-between, center);
 
@@ -103,7 +103,32 @@
     }
 }
 
-.register-page_inner_left_form__email_passw input {
+.register-page_inner_left_form__email_username input {
+    height: 2.10056rem;
+    width: 90%;
+    color: map-get($text-colors , "font-color-solid-black" );
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    outline: none;
+    border: 1px solid #282828;
+    background: #141617;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+}
+
+.register-page_inner_left_form__pass_repeat {
+    width: 100%;
+    @include flexBox(row , nowrap, space-between, center);
+
+    > label {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+}
+
+.register-page_inner_left_form__pass_repeat input {
     height: 2.10056rem;
     width: 90%;
     color: map-get($text-colors , "font-color-solid-black" );
@@ -136,6 +161,32 @@
             cursor: pointer;
         }
     }
+}
+
+.register-page_inner_left_form__upl_img {
+    width: 100%;
+    @include flexBox(row , nowrap, space-between, center);
+
+    > label {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+}
+
+.register-page_inner_left_form__upl_img input {
+    height: 2.10056rem;
+    width: 95%;
+    color: map-get($text-colors , "font-color-solid-black" );
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-top: 0.3rem;
+    outline: none;
+    border: 1px solid #282828;
+    background: #141617;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
 }
 
 .register-page_inner_left_form {

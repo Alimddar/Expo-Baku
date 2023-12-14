@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expo Baku | Login Page</title>
+    <title>Expo Baku | Register</title>
     <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/scss/register-page/style.css">
@@ -26,23 +26,42 @@
     
                             <div class="register-page_inner_left_form">
                                 <div class="register-page_inner_left_form__first_last">
-                                    <label for="userFirstLastName"> <span class="_first_last_inputs_span">First and Last Name</span>
-                                        <input type="text" id="userFirstLastName" placeholder="Enter your First and Last name" required>
+                                    <label for="userFirstName"> <span class="_first_last_inputs_span">First Name</span>
+                                        <input type="text" id="userFirstName" placeholder="Enter your First and Last name" required>
                                     </label>
 
-                                    <label for="userName"> <span class="_first_last_inputs_span">Username</span>
-                                        <input type="text" id="userName" placeholder="Enter your Username" required>
+                                    <label for="userLastName"> <span class="_first_last_inputs_span">Last Name</span>
+                                        <input type="text" id="userLastName" placeholder="Enter your Last name" required>
                                     </label>
                                 </div>
 
-                                <div class="register-page_inner_left_form__email_passw">
+                                <div class="register-page_inner_left_form__email_username">
                                     <label for="userEmail"> <span class="_first_last_inputs_span">Email</span>
                                         <input type="email" id="userEmail" placeholder="Enter your Email address" required>
                                     </label>
 
+                                    <label for="userName"> <span class="_first_last_inputs_span">Username</span>
+                                        <input type="text" id="userName" placeholder="Create your Username" required>
+                                    </label>
+                                </div>
+
+                                <div class="register-page_inner_left_form__pass_repeat">
                                     <label for="userPassword"> <span class="_first_last_inputs_span">Password</span>
                                         <input type="password" id="userPassword" placeholder="Create a new password" required>
                                     </label>
+
+                                    <label for="userPasswordRepeat"> <span class="_first_last_inputs_span">Password Repeat</span>
+                                        <input type="password" id="userPasswordRepeat" placeholder="Password Repeat" required>
+                                    </label>
+                                </div>
+
+                                <div class="register-page_inner_left_form__upl_img">
+                                    <!-- <label for="userImage"> <span class="_first_last_inputs_span">Select your Profile photo</span>
+                                        <input type="file" id="userImage" name="userImage" accept="image/png, image/jpeg">
+                                    </label> -->
+
+                                    <button id="custom-button">Select File</button>
+                                    <input type="file" id="hidden-file-input" style="display: none;" />
                                 </div>
 
                                 <div class="register-page_inner_left_form_agree_box">
