@@ -1,4 +1,18 @@
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+
+    .main-register {
+        height: 100%;
+    }
+
+    .register-page_inner {
+        height: 100%;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+    }
+
+    .register-page {
+        height: 100%;
+    }
 
     .background-register-page {
         display: none;
@@ -6,7 +20,7 @@
 
     .register-page_inner_left {
         width: auto;
-        height: 100vh;
+        height: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -14,16 +28,17 @@
     .register-page_inner_left_inner {
         padding-left: 0;
         width: auto;
-        height: auto;
+        height: 100%;
     }
 
     .register-page_inner_left_top_texts {
         width: auto;
         height: auto;
+        align-items: center;
     }
 
     .register-page_inner_left_top_texts_h2 {
-        width: auto;
+        width: 80%;
         height: auto;
         text-align: center;
     }

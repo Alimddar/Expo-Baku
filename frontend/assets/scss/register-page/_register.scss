@@ -1,5 +1,6 @@
 .register-page {
     width: 100%;
+    height: 100vh;
 }
 
 .register-page_inner {
@@ -8,7 +9,7 @@
     width: 100%;
     @include flexBox(row, nowrap, start, center);
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 .background-register-page {
@@ -89,6 +90,12 @@
     background: #141617;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 0.5rem;
+
+    &:focus {
+        scale: 1.03;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+    }
 }
 
 .register-page_inner_left_form__email_username {
@@ -114,6 +121,12 @@
     background: #141617;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 0.5rem;
+
+    &:focus {
+        scale: 1.03;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+    }
 }
 
 .register-page_inner_left_form__pass_repeat {
@@ -139,6 +152,12 @@
     background: #141617;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 0.5rem;
+
+    &:focus {
+        scale: 1.03;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+    }
 }
 
 .register-page_inner_left_form_register-btn {
@@ -165,28 +184,13 @@
 
 .register-page_inner_left_form__upl_img {
     width: 100%;
-    @include flexBox(row , nowrap, space-between, center);
-
-    > label {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
-    }
+    @include flexBox(column , nowrap, space-between, center);
+    gap: 1rem;
 }
 
-.register-page_inner_left_form__upl_img input {
-    height: 2.10056rem;
-    width: 95%;
-    color: map-get($text-colors , "font-color-solid-black" );
-    padding-left: 1rem;
-    padding-right: 1.5rem;
-    padding-top: 0.3rem;
-    outline: none;
-    border: 1px solid #282828;
-    background: #141617;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 0.5rem;
+#image-display {
+    display: flex;
+    justify-content: center;
 }
 
 .register-page_inner_left_form {
@@ -220,6 +224,21 @@
     }
 }
 
+
 label input::placeholder {
     opacity: 0.4;
+}
+
+.register-page_inner_left_form__upl_img_serImage_btn {
+    width: 70%;
+    height: 2.10056rem;
+    outline: none;
+    font-size: 0.9rem;
+    border: 1px solid #282828;
+    background: #141617;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    color: map-get($text-colors , "font-color-solid-black" );
+    @include flexBox(row, nowrap, center, center);
+    gap: 0.5rem;
 }

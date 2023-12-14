@@ -24,6 +24,7 @@ ul {
 
 .register-page {
   width: 100%;
+  height: 100vh;
 }
 
 .register-page_inner {
@@ -36,7 +37,7 @@ ul {
   justify-content: start;
   align-items: center;
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 
 .background-register-page {
@@ -135,6 +136,11 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
 }
+.register-page_inner_left_form__first_last input:focus {
+  scale: 1.03;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+}
 
 .register-page_inner_left_form__email_username {
   width: 100%;
@@ -162,6 +168,11 @@ ul {
   background: #141617;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
+}
+.register-page_inner_left_form__email_username input:focus {
+  scale: 1.03;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
 }
 
 .register-page_inner_left_form__pass_repeat {
@@ -191,6 +202,11 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
 }
+.register-page_inner_left_form__pass_repeat input:focus {
+  scale: 1.03;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+}
 
 .register-page_inner_left_form_register-btn {
   width: 100%;
@@ -215,30 +231,16 @@ ul {
 .register-page_inner_left_form__upl_img {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-}
-.register-page_inner_left_form__upl_img > label {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+  gap: 1rem;
 }
 
-.register-page_inner_left_form__upl_img input {
-  height: 2.10056rem;
-  width: 95%;
-  color: #A1A1A1;
-  padding-left: 1rem;
-  padding-right: 1.5rem;
-  padding-top: 0.3rem;
-  outline: none;
-  border: 1px solid #282828;
-  background: #141617;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 0.5rem;
+#image-display {
+  display: flex;
+  justify-content: center;
 }
 
 .register-page_inner_left_form {
@@ -286,27 +288,57 @@ label input::placeholder {
   opacity: 0.4;
 }
 
-@media (max-width: 640px) {
+.register-page_inner_left_form__upl_img_serImage_btn {
+  width: 70%;
+  height: 2.10056rem;
+  outline: none;
+  font-size: 0.9rem;
+  border: 1px solid #282828;
+  background: #141617;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  color: #A1A1A1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-register {
+    height: 100%;
+  }
+  .register-page_inner {
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+  }
+  .register-page {
+    height: 100%;
+  }
   .background-register-page {
     display: none;
   }
   .register-page_inner_left {
     width: auto;
-    height: 100vh;
+    height: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .register-page_inner_left_inner {
     padding-left: 0;
     width: auto;
-    height: auto;
+    height: 100%;
   }
   .register-page_inner_left_top_texts {
     width: auto;
     height: auto;
+    align-items: center;
   }
   .register-page_inner_left_top_texts_h2 {
-    width: auto;
+    width: 80%;
     height: auto;
     text-align: center;
   }
