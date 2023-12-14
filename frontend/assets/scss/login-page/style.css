@@ -295,4 +295,52 @@ ul {
 
 .login-page_inner_left_form {
   width: 100%;
+}
+
+@media (max-width: 640px) {
+  .background-login-page {
+    display: none;
+  }
+  .login-page_inner_left {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .login-page_inner_left_inner {
+    padding-right: 0;
+    width: auto;
+    height: auto;
+  }
+  .login-page_inner {
+    width: auto;
+    height: auto;
+  }
+  .login-page_inner_left_top_texts_h2 {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .login-page_inner_left_top_texts_p {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .login-page_inner_left_top_texts {
+    width: auto;
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 516px) {
+  .login-page_inner_left_form_sign-in_multiple {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-items: center;
+    gap: 1rem;
+  }
+  .login-page_inner_left_form_sign-in_multiple_google, .login-page_inner_left_form_sign-in_multiple_facebook {
+    width: 100%;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */

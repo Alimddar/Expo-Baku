@@ -628,7 +628,7 @@ ul {
     display: none;
   }
   .header-inner .header-inner_nav-right {
-    width: 60%;
+    width: 80%;
   }
   .hero-inner {
     width: auto;
@@ -816,5 +816,10 @@ ul {
     width: auto;
     height: auto;
     text-align: center;
+  }
+}
+@media (max-width: 426px) {
+  .header-inner_nav-right_try_button {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
