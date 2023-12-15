@@ -1,6 +1,6 @@
 .register-page {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .register-page_inner {
@@ -92,7 +92,7 @@
     border-radius: 0.5rem;
 
     &:focus {
-        scale: 1.03;
+        scale: 1.08;
         transition: ease-in-out;
         transition-duration: 0.3s;
     }
@@ -123,7 +123,7 @@
     border-radius: 0.5rem;
 
     &:focus {
-        scale: 1.03;
+        scale: 1.08;
         transition: ease-in-out;
         transition-duration: 0.3s;
     }
@@ -154,7 +154,7 @@
     border-radius: 0.5rem;
 
     &:focus {
-        scale: 1.03;
+        scale: 1.08;
         transition: ease-in-out;
         transition-duration: 0.3s;
     }
@@ -241,4 +241,20 @@ label input::placeholder {
     color: map-get($text-colors , "font-color-solid-black" );
     @include flexBox(row, nowrap, center, center);
     gap: 0.5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+#register-page_inner_left_form__upl_img_image-display {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #282828;
+    background: #141617;
 }

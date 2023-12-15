@@ -9,7 +9,7 @@
 
 .hero-inner {
     width: 100%;
-    @include flexBox (row,wrap,space-between,center);
+    @include flexBox (row,nowrap,space-between,center);
 }
 
 .hero-inner_left {
@@ -23,6 +23,7 @@
     // animation-duration: 12s;
     // animation-iteration-count: infinite;
     animation: float 6s ease-in-out infinite;
+    width: 80%;
 }
 
 .hero-inner_left_h1 {
