@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: #0D0F10;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.app-cont-top-section {
+  width: 100%;
+  display: flex;
+  height: auto;
+}
+
+.top-section-app {
+  width: 100%;
+  height: 100vh;
+}
+
+.app-cont-top-section-app-header {
+  width: 100%;
+  height: 7%;
+  border-bottom: 2px solid #212121;
+  background: #0D0F10;
+}
+
+.app-cont-top-section-app-main {
+  height: 93%;
+  background: linear-gradient(180deg, rgba(113, 90, 224, 0) 46.29%, rgba(233, 100, 255, 0.09) 99.93%);
+}
+
+.app-cont-top-section-aside {
+  width: 280px;
+  height: 100vh;
+  background: #0D0F10;
+}
+
+.app-cont-top-section-app-header {
+  display: flex;
+  justify-content: center;
+}
+
+.app-cont-top-section-aside_inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.app-cont-top-section-aside_inner_days {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+
+.app-cont-top-section-aside_inner_top_menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1.1rem;
+}
+
+.app-cont-top-section-aside_app-version {
+  font-family: Roboto;
+  color: #434343;
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  padding-top: 1.94rem;
+}
+
+.app-cont-top-section-aside_day_today {
+  padding-top: 1.5rem;
+}
+
+.app-cont-top-section-aside_day_today_h3 {
+  font-family: Inter;
+  color: #FFF;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0975rem;
+}
+
+.app-cont-top-section-aside_day_today_line {
+  height: auto;
+}
+
+.app-cont-top-section-aside_day_today_prompt {
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  gap: 1.3rem;
+}
+
+.app-cont-top-section-aside_day_today_prompt_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  color: #878787;
+  font-family: Roboto;
+  gap: 0.72rem;
+  width: auto;
+  height: auto;
+}
+
+.bi-chat-left {
+  font-size: 1rem;
+  stroke-width: 1.5px;
+  stroke: #878787;
+  filter: drop-shadow(0px 0px 3px rgba(233, 100, 255, 0.73));
+}
+
+.app-cont-top-section-aside_day_today_prompt_box_href {
+  text-decoration: none;
+  font-size: 0.825rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #878787;
+}/*# sourceMappingURL=style.css.map */

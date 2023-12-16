@@ -1,0 +1,33 @@
+.app-cont-top-section {
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.top-section-app {
+    width: 100%;
+    height: 100vh;
+}
+
+.app-cont-top-section-app-header {
+    width: 100%;
+    height: 7%;
+    border-bottom: 2px solid #212121;
+    background: #0D0F10
+}
+
+.app-cont-top-section-app-main {
+    height: 93%;
+    background: linear-gradient(180deg, rgba(113, 90, 224, 0.00) 46.29%, rgba(233, 100, 255, 0.09) 99.93%);
+}
+
+.app-cont-top-section-aside {
+    width: 280px;
+    height: 100vh;
+    background: #0D0F10
+}
+
+.app-cont-top-section-app-header {
+    display: flex;
+    justify-content: center;
+}
