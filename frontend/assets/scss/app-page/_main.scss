@@ -1,0 +1,87 @@
+.app-cont-top-section-app-main {
+    width: 100%;
+    @include flexBox(row, nowrap, center, center);
+}
+
+.app-cont-top-section-app-main_inner {
+    padding-top: 7.88rem;
+    padding-bottom: 2rem;
+    height: 100%;
+    width: 100%;
+    @include flexBox(column, nowrap, space-between, center);
+}
+
+.app-cont-top-section-app-main_inner_top {
+    width: 100%;
+    @include flexBox(column, nowrap, space-between, center);
+}
+
+.app-cont-top-section-app-main_inner_top_text {
+    width: 100%;
+    @include flexBox(column, nowrap, space-between, center);
+    gap: 0.7rem;
+}
+
+.app-cont-top-section-app-main_inner_top_text_p {
+    width: 50%;
+    color: #FFF;
+    text-align: center;
+    font-family: map-get($body-main , "font-roboto");
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.app-cont-top-section-app-main_inner_top_text_h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: map-get($body-main , "font-inter");
+}
+
+.app-cont-top-section-app-main_inner_bottom {
+    width: 80%;
+    border-radius: 0.6875rem 0.625rem 0.625rem 0.625rem;
+    background: #0D0F10;
+}
+
+.app-cont-top-section-app-main_inner_bottom-message-box {
+    padding: 0.84rem 1.4rem;
+    width: 100%;
+}
+
+.bi-chat-square-text {
+    font-size: 1.3rem;
+    color: #878787;
+}
+
+.app-cont-top-section-app-main_inner_bottom-message-box_input {
+    @include flexBox(row, nowrap, normal, center);
+    gap: 0.7rem;
+    width: 100%;
+}
+
+.app-cont-top-section-app-main_inner_bottom-message-box_input label {
+    width: 100%;
+    @include flexBox(row, nowrap, space-between, center);
+}
+
+.app-cont-top-section-app-main_inner_bottom-message-box_input input {
+    width: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #878787;
+    font-size: 1rem;
+}
+
+.userTextMessage_btn_primary {
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: #878787;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

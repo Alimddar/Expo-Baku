@@ -1,9 +1,10 @@
 .app-cont-top-section-aside_inner {
-    @include flexBox(column, wrap, start, center);
+    @include flexBox(column, wrap, start, normal);
 }
 
 .app-cont-top-section-aside_inner_days {
     @include flexBox (column, wrap, start, start);
+    gap: 3.5rem;
 }
 
 .app-cont-top-section-aside_inner_top_menu {
@@ -69,4 +70,138 @@
     font-weight: 400;
     line-height: normal;
     color: #878787;
+}
+
+.app-cont-top-section-aside_day_yesterday_h3 {
+    font-family: map-get($body-main , "font-inter");
+    color: #FFF;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0975rem;
+}
+
+.app-cont-top-section-aside_day_yesterday_line {
+    height: auto;
+}
+
+.app-cont-top-section-aside_day_yesterday_prompt {
+    padding-top: 1.25rem;
+    @include flexBox (column, wrap, start, start);
+    gap: 1.3rem;
+}
+
+.app-cont-top-section-aside_day_yesterday_prompt_box {
+    @include flexBox(row, nowrap, start, center);
+    color: #878787;
+    font-family: map-get($body-main , "font-roboto");
+    gap: 0.72rem;
+    width: auto;
+    height: auto;
+}
+
+.app-cont-top-section-aside_day_yesterday_prompt_box_href {
+    text-decoration: none;
+    font-size: 0.825rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #878787;
+}
+
+.app-cont-top-section-aside-break {
+    margin-top: 10rem;
+}
+
+.app-cont-top-section-aside-links {
+    padding: 0 1.10rem;
+    @include flexBox(column, nowrap, space-between, start);
+    gap: 8rem
+}
+
+.app-cont-top-section-aside-links-ul {
+    @include flexBox(column, nowrap, space-between, start);
+    gap: 1rem;
+    padding-top: 1.5rem;
+
+    > li a {
+        @include flexBox(row, nowrap, normal , center);
+        gap: 0.5rem;
+        text-decoration: none;
+        color: #878787;
+        font-size: 1rem;
+        font-family: map-get($body-main , "font-plusjakarta");
+    }
+}
+
+.app-cont-top-section-aside-links-user {
+    @include flexBox(row, nowrap, space-between, center);
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 7rem;
+}
+
+.app-cont-top-section-aside-links-user_inner {
+    @include flexBox(row, nowrap, space-between, center);
+    width: 100%;
+    padding: 0.3rem 0.5rem;
+    height: 3.3375rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(123deg, #2A3227 30.39%, rgba(43, 43, 43, 0.12) 73.35%);
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo {
+    height: 100%;
+    @include flexBox(row, nowrap, start, center);
+    width: 70%;
+    gap: 0.4rem;
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo-username_ship {
+    @include flexBox(column, nowrap, space-between, start);
+    gap: 0.1rem;
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo-username_ship_h3 {
+    color: #FFF;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    font-family: map-get($body-main , "font-plusjakarta");
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo-username_ship_h5 {
+    color: #B6F09C;
+    font-size: 0.5375rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: map-get($body-main , "font-plusjakarta");
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo-profilephoto {
+    height: 100%;
+    border-radius: 1.625rem;
+    width: 30%;
+    background-color: red;
+    background: url("../../images/app/d747103a14fd646c5121461fa316fbda.jpg");
+    background-size: cover;
+}
+
+.app-cont-top-section-aside-links-quit-btn {
+    height: 100%;
+}
+
+.app-cont-top-section-aside-links-quit-btn_primary {
+    background: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #BFBFBF;
+    filter: drop-shadow(0px 0px 5px #36791D);
+
+    &:hover {
+        cursor: pointer;
+    }
 }

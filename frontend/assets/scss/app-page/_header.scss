@@ -1,0 +1,53 @@
+.app-cont-top-section-app-header {
+    width: 100%;
+    @include flexBox(row, nowrap, space-between, center);
+}
+
+.app-cont-top-section-app-header_nav {
+    width: 100%;
+    padding: 0 2rem;
+    @include flexBox(row, nowrap, space-between, center);
+}
+
+.app-cont-top-section-app-header_nav_left {
+    height: 100%;
+    width: auto;
+}
+
+.app-cont-top-section-app-header_nav_right {
+    height: 100%;
+    width: 70%;
+    @include flexBox(row , nowrap, flex-end, center);
+    gap: 0.7rem
+}
+
+.app-cont-top-section-app-header_nav_right_btn_primary {
+    @include flexBox(row , nowrap, center, center);
+    gap: 0.5rem;
+    width: auto;
+    padding: 0.62rem 0.73rem;
+    border-radius: 0.825rem;
+    border: 1px solid #1B1B1D;
+    background: #1D272D;
+    color: #66C3E7;
+    text-align: center;
+    font-family: map-get($body-main , "font-plusjakarta");
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.app-cont-top-section-app-header_nav_right_btn_secondary {
+    width: auto;
+    padding: 0.62rem 0.73rem;
+    border-radius: 0.625rem;
+    background: #1B1B1D;
+    border: 1px solid #1B1B1D;
+    text-align: center;
+    color: #9C9C9C;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -11,7 +11,7 @@
 
 body {
   font-size: 16px;
-  background-color: #0D0F10;
+  background-color: #131619;
   min-height: 100vh;
 }
 
@@ -33,7 +33,6 @@ ul {
 .app-cont-top-section-app-header {
   width: 100%;
   height: 7%;
-  border-bottom: 2px solid #212121;
   background: #0D0F10;
 }
 
@@ -58,7 +57,7 @@ ul {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: start;
-  align-items: center;
+  align-items: normal;
 }
 
 .app-cont-top-section-aside_inner_days {
@@ -67,6 +66,7 @@ ul {
   flex-wrap: wrap;
   justify-content: start;
   align-items: start;
+  gap: 3.5rem;
 }
 
 .app-cont-top-section-aside_inner_top_menu {
@@ -144,4 +144,351 @@ ul {
   font-weight: 400;
   line-height: normal;
   color: #878787;
+}
+
+.app-cont-top-section-aside_day_yesterday_h3 {
+  font-family: Inter;
+  color: #FFF;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0975rem;
+}
+
+.app-cont-top-section-aside_day_yesterday_line {
+  height: auto;
+}
+
+.app-cont-top-section-aside_day_yesterday_prompt {
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  gap: 1.3rem;
+}
+
+.app-cont-top-section-aside_day_yesterday_prompt_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  color: #878787;
+  font-family: Roboto;
+  gap: 0.72rem;
+  width: auto;
+  height: auto;
+}
+
+.app-cont-top-section-aside_day_yesterday_prompt_box_href {
+  text-decoration: none;
+  font-size: 0.825rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #878787;
+}
+
+.app-cont-top-section-aside-break {
+  margin-top: 10rem;
+}
+
+.app-cont-top-section-aside-links {
+  padding: 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8rem;
+}
+
+.app-cont-top-section-aside-links-ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+.app-cont-top-section-aside-links-ul > li a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #878787;
+  font-size: 1rem;
+  font-family: Plus Jakarta Sans;
+}
+
+.app-cont-top-section-aside-links-user {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 7rem;
+}
+
+.app-cont-top-section-aside-links-user_inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  height: 3.3375rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(123deg, #2A3227 30.39%, rgba(43, 43, 43, 0.12) 73.35%);
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 70%;
+  gap: 0.4rem;
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo-username_ship {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.1rem;
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo-username_ship_h3 {
+  color: #FFF;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Plus Jakarta Sans;
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo-username_ship_h5 {
+  color: #B6F09C;
+  font-size: 0.5375rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: Plus Jakarta Sans;
+}
+
+.app-cont-top-section-aside-links-user_name_members_photo-profilephoto {
+  height: 100%;
+  border-radius: 1.625rem;
+  width: 30%;
+  background-color: red;
+  background: url("../../images/app/d747103a14fd646c5121461fa316fbda.jpg");
+  background-size: cover;
+}
+
+.app-cont-top-section-aside-links-quit-btn {
+  height: 100%;
+}
+
+.app-cont-top-section-aside-links-quit-btn_primary {
+  background: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.5rem;
+  color: #BFBFBF;
+  filter: drop-shadow(0px 0px 5px #36791D);
+}
+.app-cont-top-section-aside-links-quit-btn_primary:hover {
+  cursor: pointer;
+}
+
+.app-cont-top-section-app-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-cont-top-section-app-header_nav {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-cont-top-section-app-header_nav_left {
+  height: 100%;
+  width: auto;
+}
+
+.app-cont-top-section-app-header_nav_right {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.app-cont-top-section-app-header_nav_right_btn_primary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: auto;
+  padding: 0.62rem 0.73rem;
+  border-radius: 0.825rem;
+  border: 1px solid #1B1B1D;
+  background: #1D272D;
+  color: #66C3E7;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+}
+.app-cont-top-section-app-header_nav_right_btn_primary:hover {
+  cursor: pointer;
+}
+
+.app-cont-top-section-app-header_nav_right_btn_secondary {
+  width: auto;
+  padding: 0.62rem 0.73rem;
+  border-radius: 0.625rem;
+  background: #1B1B1D;
+  border: 1px solid #1B1B1D;
+  text-align: center;
+  color: #9C9C9C;
+}
+.app-cont-top-section-app-header_nav_right_btn_secondary:hover {
+  cursor: pointer;
+}
+
+.app-cont-top-section-app-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-cont-top-section-app-main_inner {
+  padding-top: 7.88rem;
+  padding-bottom: 2rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-cont-top-section-app-main_inner_top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-cont-top-section-app-main_inner_top_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.app-cont-top-section-app-main_inner_top_text_p {
+  width: 50%;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.app-cont-top-section-app-main_inner_top_text_h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: Inter;
+}
+
+.app-cont-top-section-app-main_inner_bottom {
+  width: 80%;
+  border-radius: 0.6875rem 0.625rem 0.625rem 0.625rem;
+  background: #0D0F10;
+}
+
+.app-cont-top-section-app-main_inner_bottom-message-box {
+  padding: 0.84rem 1.4rem;
+  width: 100%;
+}
+
+.bi-chat-square-text {
+  font-size: 1.3rem;
+  color: #878787;
+}
+
+.app-cont-top-section-app-main_inner_bottom-message-box_input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.app-cont-top-section-app-main_inner_bottom-message-box_input label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-cont-top-section-app-main_inner_bottom-message-box_input input {
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #878787;
+  font-size: 1rem;
+}
+
+.userTextMessage_btn_primary {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: #878787;
+}
+.userTextMessage_btn_primary:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
