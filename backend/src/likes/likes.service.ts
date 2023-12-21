@@ -1,26 +1,44 @@
 import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Like } from './entities/like.entity';
+import { Repository } from 'typeorm';
 import { CreateLikeDto } from './dto/create-like.dto';
-import { UpdateLikeDto } from './dto/update-like.dto';
+import { User } from '../users/entities/user.entity';
+import { Post } from '../posts/entities/post.entity';
+import { Comment } from '../comments/entities/comment.entity';
 
 @Injectable()
 export class LikesService {
-  create(createLikeDto: CreateLikeDto) {
-    return 'This action adds a new like';
-  }
+  constructor(
+    @InjectRepository(Like)
+    private likesRepository: Repository<Like>,
+    @InjectRepository(Post)
+    private postsRepository: Repository<Post>,
+    @InjectRepository(Comment)
+    private commentsRepository: Repository<Comment>,
+  ) {}
 
-  findAll() {
-    return `This action returns all likes`;
-  }
+  async create(createLikeDto: CreateLikeDto, user: User): Promise<Like> {
+    const { postId, commentId } = createLikeDto;
 
-  findOne(id: number) {
-    return `This action returns a #${id} like`;
-  }
+    const like = this.likesRepository.create({ userId: user });
 
-  update(id: number, updateLikeDto: UpdateLikeDto) {
-    return `This action updates a #${id} like`;
-  }
+    if (postId) {
+      const post = await this.postsRepository.findOneBy({ postId });
+      if (!post) {
+        throw new Error('Post not found');
+      }
+      like.postId = post;
+    } else if (commentId) {
+      const comment = await this.commentsRepository.findOneBy({ commentId });
+      if (!comment) {
+        throw new Error('Comment not found');
+      }
+      like.commentId = comment;
+    } else {
+      throw new Error('Post ID or Comment ID must be provided');
+    }
 
-  remove(id: number) {
-    return `This action removes a #${id} like`;
+    return this.likesRepository.save(like);
   }
 }

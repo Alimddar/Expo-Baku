@@ -12,8 +12,8 @@ export class Post {
   @PrimaryGeneratedColumn('increment', { type: 'bigint' })
   postId: number;
 
-  @ManyToOne(() => User, (user) => user.userId)
-  userId: User;
+  @ManyToOne(() => User, (user) => user.posts)
+  user: User;
 
   @Column({ type: 'text' })
   title: string;

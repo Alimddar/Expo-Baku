@@ -3,12 +3,17 @@ import {
   PrimaryGeneratedColumn,
   Column,
   CreateDateColumn,
+  OneToMany,
 } from 'typeorm';
+import { Post } from '../../posts/entities/post.entity';
 
 @Entity()
 export class User {
   @PrimaryGeneratedColumn('increment', { type: 'bigint' })
   userId: number;
+
+  @OneToMany(() => Post, (post) => post.user)
+  posts: Post[];
 
   @Column()
   username: string;
